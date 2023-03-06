@@ -1,0 +1,19 @@
+Android Layout
+	to define the user interface
+	holds the UI control and widget
+	
+View
+	defined the user interface
+	TextView,EditText,CheckBox,RadioButton,etc
+
+ViewLayout
+	LinearLayout
+		it is subclass of viewGroup
+		it used to provide child view elements one by one either in a particular direction.
+	RelativeLayout
+	ContraintLayout
+	FrameLayout
+	TableLayout
+	
+int c = 20
+int a = c

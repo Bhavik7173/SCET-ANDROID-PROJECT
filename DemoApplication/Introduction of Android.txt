@@ -1,0 +1,20 @@
+Setting
+About phone (Update Version)
+setting
+Search Developer Options
+============================================================
+Android Core Building Block
+1. Activity
+2. Intent
+3. Service
+4. Content Provider
+5. Broadcast Recevier
+============================================================
+Android Life Cycle
+1.onCreate - called when activity is first created.
+2.onStart - when activity is becoming visible to the user.
+3.onResume - when activity will start interacting with the user.
+4.onPause - when activityis not visible to the user or going to background.
+5.onStop - when activity is no longer visibleto the user
+6.on Restart - when activity is stopped and after again open it.
+7.onDestroy - before the activityis destroy in background.
