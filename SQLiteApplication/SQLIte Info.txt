@@ -1,0 +1,25 @@
+SQLite
+	- Open Source Relational Database
+	- used to perform database operations on android device such as storing info,
+	  manipualting or retriving data
+	- Database Name
+	- Table Name (must be different,is allowed multiple table)
+	- Table Column Entity
+	- Table Row
+	- CRUD (Create,Retrive,Update,Delete)
+
+SQLiteOpenHelper
+	- is used for database creation and version management.
+	- it is a class which is provide the functionality to use the SQLite Database.
+	- onCreate() - when database is created for the first time.
+	- onUpgrade() - when database needs to upgrade.
+	Constructor
+	- SQLiteOpenHelper(context,name,cursorFactory,version)
+	- SQLiteOpenHelper(context,name,cursorFactory,version,errorHandler)
+
+SQLiteDatabase
+	- it is provide a CRUD Operation Query.
+	- void execSQL(...) - used for executing sql query.
+	- long insert(...) - used for insert a record in table.
+	- int update(...) - used to update the record in table.
+	- Cursor query(...) - used to return a cursor over the resultset.
