@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImageApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Chat fragment</string>
+    <string name="hello_status_fragment">Hello Status fragment</string>
+    <string name="hello_call_fragment">Hello Call fragment</string>
+</resources>
