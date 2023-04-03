@@ -1,0 +1,91 @@
+package com.example.navdrawerbar;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+public class MainActivity extends AppCompatActivity {
+
+    DrawerLayout drawerLayout;
+    ListView listView;
+    ActionBarDrawerToggle actionBarDrawerToggle;
+    DataModel dataModel[];
+    CharSequence mDrawerTitle, mTitle;
+    String navMenuTitle[];
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        listView = findViewById(R.id.left_drawer);
+
+        //ActionBar with DrawerBar Listerner
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        mDrawerTitle = mTitle = getTitle();
+        navMenuTitle = getResources().getStringArray(R.array.nav_menu);
+        //Utilize the data on Drawer Layout
+        dataModel = new DataModel[3];
+        dataModel[0] = new DataModel(R.drawable.baseline_home_24, "Home");
+        dataModel[1] = new DataModel(R.drawable.baseline_music_note_24, "Music");
+        dataModel[2] = new DataModel(R.drawable.baseline_email_24, "Email");
+
+        DrawerCustomAdapter drawerCustomAdapter = new DrawerCustomAdapter(this, R.layout.list_view_item_row, dataModel);
+        listView.setAdapter(drawerCustomAdapter);
+        listView.setOnItemClickListener(new DrawerItemClickListener());
+        drawerLayout.setDrawerListener(actionBarDrawerToggle);
+
+
+    }
+
+    private class DrawerItemClickListener implements AdapterView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            selectItem(i);
+        }
+    }
+
+    private void selectItem(int position) {
+        Fragment fragment = null;
+        switch (position) {
+            case 0:
+//                fragment = new HomeFragment();
+                Log.d("scet", "Home Fragment");
+                break;
+            case 1:
+                Log.d("scet", "Music Fragment");
+                break;
+            case 2:
+                Log.d("scet", "Email Fragment");
+                break;
+            default:
+                break;
+        }
+        if (fragment != null) {
+            Log.d("scet_null", "Home Fragment");
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+            Log.d("scet_action", item + "");
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}

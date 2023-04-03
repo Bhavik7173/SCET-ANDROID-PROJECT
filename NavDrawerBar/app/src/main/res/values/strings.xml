@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NavDrawerBar</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string-array name="nav_menu">
+        <item>Home</item>
+        <item>Music</item>
+        <item>Email</item>
+    </string-array>
+</resources>
