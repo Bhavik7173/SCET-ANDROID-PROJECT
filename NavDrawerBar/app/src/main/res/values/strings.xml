@@ -6,5 +6,6 @@
         <item>Home</item>
         <item>Music</item>
         <item>Email</item>
+        <item>Logout</item>
     </string-array>
 </resources>
