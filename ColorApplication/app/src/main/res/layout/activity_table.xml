@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number which you want to get the Table"
+        android:textSize="18dp"
+        android:inputType="numberDecimal"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/getTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET TABLE"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tableTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Display the Table"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="15dp"/>
+</LinearLayout>

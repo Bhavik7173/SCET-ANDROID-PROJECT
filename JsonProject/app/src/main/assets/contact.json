@@ -1,0 +1,36 @@
+{
+  "contacts": [
+    {
+      "name": "Bhavik",
+      "contact": "+91 6353539097",
+      "country": "India",
+      "email": "b@gmail.com"
+    },
+    {
+      "name": "Arpan",
+      "contact": "+91 7041165002",
+      "country": "USA",
+      "email": "a@gmail.com"
+    },{
+      "name": "Neha",
+      "contact": "+24 546987631",
+      "country": "UK",
+      "email": "n@gmail.com"
+    },{
+      "name": "Hiral",
+      "contact": "+35 362512536",
+      "country": "Australia",
+      "email": "h@gmail.com"
+    },{
+      "name": "Harshita",
+      "contact": "+22 225621412",
+      "country": "Germany",
+      "email": "hr@gmail.com"
+    },{
+      "name": "Chirag",
+      "contact": "+414 2563145879",
+      "country": "Canada",
+      "email": "c@gmail.com"
+    }
+  ]
+}

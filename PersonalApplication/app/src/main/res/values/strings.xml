@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PersonalApplication</string>
+    <string-array name="folder">
+        <item>Avneet Kaur</item>
+        <item>Surbhi Jyoti</item>
+        <item>Anushka Sen</item>
+    </string-array>
+</resources>
